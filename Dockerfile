@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get install -y xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils && \
     apt-get install -y novnc websockify python3-numpy && \
-    apt-get install -y supervisor && \
+    apt-get install -y supervisor x11vnc xvfb && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
